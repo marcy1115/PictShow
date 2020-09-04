@@ -41,6 +41,7 @@
 ### Association
 * has_many: arts
 * has_one: plofiles
+***
 
 ## Arts テーブル
 | column       | type       | options                        |
@@ -55,6 +56,7 @@
 ### Association
 * belongs_to: user
 * has_many: comments
+***
 
 ## Comments テーブル
 | column       | type       | options                        |
@@ -66,5 +68,19 @@
 | age_limit_id | integer    | null: false                    |
 |
 
-## Association
+### Association
 * belongs_to: art
+***
+
+## Plofiles　テーブル
+| column       | type       | options                        |
+|--------------|------------|--------------------------------|
+| user         | references | null: false, foreign_key: true |
+| plof_image   | text       | null:false                     |
+| text         | text       | null: false                    |
+| my_image:    | text       | null: false                    |
+|
+
+### Association
+* belongs_to: user
+***
