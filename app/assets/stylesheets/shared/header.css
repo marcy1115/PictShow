@@ -2,16 +2,45 @@
   box-sizing: border-box;
 }
 
+a:link, a:visited, a:hover, a:active {
+  color: rgb(164, 41, 212);
+  text-decoration: none;
+}
+
 .page-header {
+  background-color: #a9b672;
   width: 100vw;
   padding: 2vh 2vh;
 }
 
 .search-bar-contents {
+  display: flex;
   justify-content: space-between;
 }
 
 .pict-show-icon {
   width: 10vw;
   margin-right: 10vw;
+}
+
+.user-wrap {
+  padding-right: 40px;
+  display: flex;
+  align-items: flex-end;
+  font-size: 25px;
+}
+
+.log-in {
+  padding: 10px;
+  font-weight: bold;
+  border: 3px solid rgb(164, 41, 212);
+  border-radius: 10px;
+}
+
+.sign-up {
+  margin-left: 10px;
+  padding: 10px;
+  font-weight: bold;
+  border: 3px solid rgb(164, 41, 212);
+  border-radius: 10px;
 }

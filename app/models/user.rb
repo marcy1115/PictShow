@@ -15,7 +15,7 @@ class User < ApplicationRecord
   end
 
   with_options presence: true, format: { with: half_width_alphanumeric } do
-    validates :password
+    validates :password, length: { minimum: 8 }
     validates :password_confirmation
   end
 end
