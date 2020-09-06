@@ -1,3 +1,5 @@
+<%= render 'shared/header' %>
+
 <%= form_with method: :post, class: 'registration-main', local: true do |form| %>
 <div class='form-wrap'>
   <div class='form-header'>
@@ -73,3 +75,5 @@
 </div>
 <% end %>
   <%# 登録フォーム%>
+
+  <%= render 'shared/footer' %>

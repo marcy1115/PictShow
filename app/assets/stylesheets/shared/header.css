@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+.page-header {
+  width: 100vw;
+  padding: 2vh 2vh;
+}
+
+.search-bar-contents {
+  justify-content: space-between;
+}
+
+.pict-show-icon {
+  width: 10vw;
+  margin-right: 10vw;
+}

@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+.page-footer {
+  background-color: rgb(94, 94, 94);
+}
+
+.info-footer-wrap {
+  width: 100;
+
+}
+
+.info-footer {
+  color: white;
+}
+
+.info-footer-title {
+  font-size: 30px;
+}
+
+.info-footer-text {
+  font-size: 20px;
+}
