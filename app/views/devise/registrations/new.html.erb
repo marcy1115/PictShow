@@ -1,13 +1,13 @@
 <%= render 'shared/header' %>
 
-<%= form_with method: :post, class: 'registration-main', local: true do |form| %>
+<%= form_with model: @user, url: user_registration_path, method: :post, class: 'registration-main', local: true do |form| %>
 <div class='form-wrap'>
   <div class='form-header'>
     <h1 class='form-header-text'>
       会員登録をして、イラストを投稿しよう！
     </h1>
   </div>
-
+  <%= render 'shared/error_messages', model: form.object %>
   <%# 登録フォーム%>
   <div class='form-group'>
     <div class='form-text-wrap'>
@@ -41,11 +41,11 @@
     <div class='form-text-wrap'>
       <label class='form-text'>性別</label>
       <span class='indispensable'>※必須項目</span>
-      <p>
+      <div class='sex-radio-btn'>
         <%= form.radio_button :sexuality, '男'%>男
         <%= form.radio_button :sexuality, '女'%>女
         <%= form.radio_button :sexuality, 'その他'%>その他
-      </p>
+      </div>
     </div>
   </div>
   <div class='form-group'>

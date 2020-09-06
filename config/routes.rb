@@ -3,4 +3,5 @@ Rails.application.routes.draw do
 
   root 'arts#index'
   resources :users, only: [:new]
+  resources :arts, only: [:index]
 end

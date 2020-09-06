@@ -62,6 +62,10 @@
   resize: none;
 }
 
+.sex-radio-btn {
+  justify-content: center;
+}
+
 .input-birth-wrap{
   display: flex;
   flex-wrap: wrap;
