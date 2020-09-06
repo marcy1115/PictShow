@@ -8,7 +8,7 @@ class User < ApplicationRecord
   half_width_alphanumeric = /\A(?=.*?[a-z])(?=.*?[\d])[a-z\d]+\z/i
 
   with_options presence: true do
-    validates :nickname
+    validates :nickname, length: { maximum: 20 }
     validates :email, format: { with: domain }
     validates :sexuality
     validates :birth
