@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+.login-flash-message {
+  font-size: 1.3vw;
+  list-style-type: circle;
+  color: rgb(184, 48, 0)
+}
+
+.login-btn{
+  width: 50%;
+  margin: 0 auto;
+}
+
+.login-red-btn{
+  width: 100%;
+  background: #ea352d;
+  border: 1px solid #ea352d;
+  color: #fff;
+  line-height: 48px;
+  font-size: 14px;
+  cursor: pointer;
+}
