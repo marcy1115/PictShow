@@ -1,0 +1,27 @@
+<%= render 'shared/header' %>
+
+<div class='top-page-contents'>
+  <ul class='user-list-show' id='pull-down-lists'>
+      <li><%= link_to '新規投稿', new_art_path, class: 'new-illustration' %></li>
+      <li><%= link_to 'マイページ', '#', class: 'my-plofile' %></li>
+      <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: 'log-out' %></li>
+  </ul>
+</div>
+<div class='new-page'>
+  <div class='new-page-wrap'>
+    <div class='new-header-text'>
+      イラストをみんなに見てもらおう！
+    </div>
+    <%= form_with local: true do |form| %>
+      <%# イラスト　%>
+      <div class='new-form-group'>
+        <div class='form-img-text'>
+          イラスト
+          <span class="indispensable">必須項目</span>
+        </div>
+      </div>
+      <%# イラスト　%>
+    <% end %>
+  </div>
+</div>
+<%= render 'shared/footer' %>

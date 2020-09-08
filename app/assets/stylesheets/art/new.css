@@ -1,0 +1,28 @@
+.new-page-contents {
+  display: flex;
+  justify-content: center;
+}
+
+.new-page {
+  display: flex;
+  justify-content: center;
+  background-color: lightgrey;
+}
+
+.new-page-wrap {
+  background-color: white;
+}
+
+.new-header-text {
+  padding: 0 70px;
+  font-size: 30px;
+}
+
+.new-form-group {
+  display: flex;
+  justify-content: center;
+}
+
+.form-img-text {
+  font-size: 25px;
+}
