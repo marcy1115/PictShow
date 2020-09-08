@@ -5,7 +5,6 @@
     <ul class='user-wrap'>
       <% if user_signed_in? %>
         <li class='user-session' id='user-list'><%= current_user.nickname %></li>
-        <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: 'log-out' %></li>
       <% else %>
         <li><%= link_to 'ログイン', new_user_session_path, method: :get, class: 'log-in' %></li>
         <li><%= link_to '新規登録', new_user_registration_path, method: :get, class: 'sign-up' %></li>
