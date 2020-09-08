@@ -7,6 +7,19 @@
   margin: 40px;
 }
 
+.user-list-show {
+  display: none;
+  position: absolute;
+  top: 120px;
+  left: 1075px;
+  font-size: 20px;
+  background-color: rgba(182, 182, 182, 0.39);
+}
+
+.user-list {
+  
+}
+
 .top-page-text {
   display: flex;
   justify-content: space-between;

@@ -2,9 +2,8 @@
   box-sizing: border-box;
 }
 
-a:link, a:visited, a:hover, a:active {
-  color: rgb(164, 41, 212);
-  text-decoration: none;
+.li {
+  margin-bottom: 5px;
 }
 
 .page-header {
@@ -31,6 +30,7 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .user-session {
+  margin-right: 170px;
   padding: 10px;
   color: rgb(164, 41, 212); 
   font-weight: bold;
@@ -39,12 +39,25 @@ a:link, a:visited, a:hover, a:active {
   cursor: pointer;
 }
 
+.new-illustration {
+  margin-left: 10px;
+  padding: 10px;
+  font-weight: bold;
+  color: rgb(59, 59, 59);
+}
+
+.my-plofile {
+  margin-left: 10px;
+  padding: 10px;
+  font-weight: bold;
+  color: rgb(59, 59, 59);
+}
+
 .log-out {
   margin-left: 10px;
   padding: 10px;
   font-weight: bold;
-  border: 3px solid rgb(164, 41, 212);
-  border-radius: 10px;
+  color: rgb(59, 59, 59);
 }
 
 .log-in {
