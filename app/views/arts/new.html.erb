@@ -1,0 +1,64 @@
+<%= render 'shared/header' %>
+
+<div class='top-page-contents'>
+  <ul class='user-list-show' id='pull-down-lists'>
+      <li><%= link_to '新規投稿', new_art_path, class: 'new-illustration' %></li>
+      <li><%= link_to 'マイページ', '#', class: 'my-plofile' %></li>
+      <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: 'log-out' %></li>
+  </ul>
+</div>
+<div class='new-page'>
+  <div class='new-page-wrap'>
+    <div class='new-header-text'>
+      イラストをみんなに見てもらおう！
+    </div>
+    <%= form_with model:@art, url: arts_path, local: true do |form| %>
+      <%# イラスト　%>
+      <div class='new-form-group'>
+        <div class='form-img-text'>
+          イラスト
+          <span class="indispensable">※必須項目</span>
+        </div>
+        <%= form.file_field :image %>
+      </div>
+      <%# イラスト　%>
+      <%# タイトル名 %>
+      <div class='new-form-group'>
+        <div class='form-title-text'>
+          イラスト名
+          <span class="indispensable">※必須項目</span>
+        </div>
+        <%= form.text_field :title, placeholder: 'タイトル 上限20文字', class: 'new-title-form' %>
+      </div>
+      <%# タイトル名 %>
+      <%# キャプション %>
+      <div class='new-form-group'>
+        <div class='form-caption-text'>
+          イラスト説明
+          <span class='optional'>任意</span>
+        </div>
+        <%= form.text_area :text, placeholder: 'キャプション 上限1000文字', class: 'new-caption-form' %>
+      </div>
+      <%# キャプション %>
+      <%# 年齢制限 %>
+      <div class='new-form-group'>
+        <div class='form-age-text'>
+          イラスト閲覧制限
+          <span class='indispensable'>※必須項目</span>
+          <div class='age-radio-btn'>
+            <%= form.radio_button :age_limit, '全年齢' %>全年齢
+            <%= form.radio_button :age_limit, 'R-18' %>R-18
+            <%= form.radio_button :age_limit, 'R-18G' %>R-18G
+          </div>
+        </div>
+      </div>
+      <%# 年齢制限 %>
+      <%# 投稿ボタン %>
+      <div class='new-form-group'>
+          <%= form.submit '投稿する', class: 'illustration-post-btn' %>
+      </div>
+      <%# 投稿ボタン %>
+    <% end %>
+  </div>
+</div>
+<%= render 'shared/footer' %>

@@ -3,7 +3,7 @@
 <div class='top-page-contents'>
   <div class='top-page-wrap'>
     <ul class='user-list-show' id='pull-down-lists'>
-        <li><%= link_to '新規投稿', '#', class: 'new-illustration' %></li>
+        <li><%= link_to '新規投稿', new_art_path, class: 'new-illustration' %></li>
         <li><%= link_to 'マイページ', '#', class: 'my-plofile' %></li>
         <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: 'log-out' %></li>
     </ul>
@@ -16,9 +16,29 @@
       </h2>
     </div>
     <ul class='art-lists'>
-      <li class='list'>
-        <%= image_tag 'pict_logo.jpg', class: 'art-image' %>
-      </li>
+      <% if @arts %>
+        <% @arts.each do |art| %>
+        <li class='list'>
+          <%= link_to '#' do %>
+            <%= image_tag art.image, class: 'art-image'%>
+          <% end %>
+          <div class='art-title'>
+            <%= art.title %>
+          </div>
+          <div>
+            <%= link_to '#' do %>
+              <%= art.user.nickname %>
+            <% end %>
+          </div>
+        <li>
+        <% end %>
+      <% else %>
+        <%# イラストが未投稿だとダミー画像表示%>
+        <li class='list'>
+          <%= image_tag 'pict_logo.jpg', class: 'art-image' %>
+        </li>
+        <%# イラストが未投稿だとダミー画像表示%>
+      <% end %>
     </ul>
   </div>
 </div>

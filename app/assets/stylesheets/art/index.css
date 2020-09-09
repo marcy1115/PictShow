@@ -16,10 +16,6 @@
   background-color: rgba(182, 182, 182, 0.39);
 }
 
-.user-list {
-  
-}
-
 .top-page-text {
   display: flex;
   justify-content: space-between;
@@ -29,8 +25,22 @@
 
 .art-lists {
   margin: 50px 10px;
+  display: flex;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
 }
 
 .art-image {
   width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  border: 1px solid #424242;
+  margin-right: 20px;
+}
+
+.art-title {
+  overflow: hidden;
 }
