@@ -15,14 +15,29 @@
         <%= link_to 'もっと閲覧', '#'%>
       </h2>
     </div>
-    <% if @arts %>
-    <% else %>
-      <ul class='art-lists'>
+    <ul class='art-lists'>
+      <% if @arts %>
+        <% @arts.each do |art| %>
+        <li class='list'>
+          <%= link_to '#' do %>
+            <%= image_tag art.image, class: 'art-image'%>
+          <% end %>
+          <%= art.title %>
+          <div>
+            <%= link_to '#' do %>
+              <%= art.user.nickname %>
+            <% end %>
+          </div>
+        <li>
+        <% end %>
+      <% else %>
+        <%# イラストが未投稿だとダミー画像表示%>
         <li class='list'>
           <%= image_tag 'pict_logo.jpg', class: 'art-image' %>
         </li>
-      </ul>
-    <% end %>
+        <%# イラストが未投稿だとダミー画像表示%>
+      <% end %>
+    </ul>
   </div>
 </div>
 <%= render 'shared/footer' %>

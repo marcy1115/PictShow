@@ -25,8 +25,17 @@
 
 .art-lists {
   margin: 50px 10px;
+  display: flex;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
 }
 
 .art-image {
   width: 200px;
+  border-radius: 5px;
+  border: 1px solid #424242;
+  margin-right: 20px;
 }
