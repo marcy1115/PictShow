@@ -1,0 +1,38 @@
+.show-page-contents {
+  display: flex;
+  justify-content: center;
+}
+
+.show-wrap {
+  color: #383838;
+  padding: 10px;
+}
+
+.show-illustration {
+  max-width: 1100px;
+}
+
+.show-title-text {
+  padding-left: 40px;
+  font-size: 25px;
+  font-weight: bold;
+  border-bottom: 1px solid #383838;
+}
+
+.show-caption-text {
+  padding-left: 40px;
+  font-size: 20px;
+  border-bottom: 1px solid #383838;
+}
+
+.show-time-text {
+  padding-left: 40px;
+  font-size: 20px;
+  border-bottom: 1px solid #383838;
+}
+
+.show-user-text {
+  padding-left: 40px;
+  font-size: 20px;
+  border-bottom: 1px solid #383838;
+}
