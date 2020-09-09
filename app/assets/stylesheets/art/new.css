@@ -20,9 +20,54 @@
 
 .new-form-group {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .form-img-text {
   font-size: 25px;
+}
+
+.form-title-text {
+  font-size: 25px;
+}
+
+.new-title-form {
+  width: 450px;
+  padding: 5px 15px;
+  font-size: 20px;
+}
+
+.form-caption-text {
+  font-size: 25px;
+}
+
+.optional {
+  font-size: 10px;
+  color: lightseagreen;
+}
+
+.new-caption-form {
+  width: 450px;
+  height: 350px;
+  padding: 5px 15px;
+  font-size: 20px;
+}
+
+.form-age-text {
+  font-size: 25px;
+}
+
+.illustration-post-btn {
+  padding: 5px 15px;
+  font-size: 25px;
+  background-color: lightseagreen;
+  color: lightyellow;
+  border-radius: 5px;
+}
+
+.age-radio-btn {
+  font-size: 20px;
+  padding: 0 10px;
 }
