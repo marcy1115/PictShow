@@ -19,7 +19,7 @@
       <% if @arts %>
         <% @arts.each do |art| %>
         <li class='list'>
-          <%= link_to '#' do %>
+          <%= link_to art_path(art.id) do %>
             <%= image_tag art.image, class: 'art-image'%>
           <% end %>
           <div class='art-title'>

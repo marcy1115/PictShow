@@ -1,0 +1,30 @@
+<%= render 'shared/header'%>
+
+<div class='show-page-contents'>
+  <ul class='user-list-show' id='pull-down-lists'>
+    <li><%= link_to '新規投稿', new_art_path, class: 'new-illustration' %></li>
+    <li><%= link_to 'マイページ', '#', class: 'my-plofile' %></li>
+    <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: 'log-out' %></li>
+  </ul>
+  <div class='show-wrap'>
+    <%= image_tag @art.image, class: 'show-illustration'%>
+    <p>タイトル</p>
+    <div class='show-title-text'>
+      <%= @art.title %>
+    </div>
+    <p>キャプション</p>
+    <div class='show-caption-text'>
+      <%= @art.text %>
+    </div>
+    <p>投稿日時</p>
+    <div class='show-time-text'>
+      <%= l @art.created_at %>
+    </div>
+    <p>投稿者</p>
+    <div class='show-user-text'>
+      <%= @art.user.nickname %>
+    </div>
+  </div>
+</div>
+
+<%= render 'shared/footer'%>

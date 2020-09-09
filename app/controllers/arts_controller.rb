@@ -17,6 +17,10 @@ class ArtsController < ApplicationController
     end
   end
 
+  def show
+    @art = Art.find(params[:id])
+  end
+
   private
 
   def illustration_params
