@@ -13,6 +13,7 @@
       イラストをみんなに見てもらおう！
     </div>
     <%= form_with model:@art, url: arts_path, local: true do |form| %>
+      <%= render 'shared/error_messages', model: form.object %>
       <%# イラスト　%>
       <div class='new-form-group'>
         <div class='form-img-text'>

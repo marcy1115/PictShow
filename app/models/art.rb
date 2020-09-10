@@ -2,6 +2,7 @@ class Art < ApplicationRecord
   #Validation
   with_options presence: true do
     validates :image
+    validates :age_limit
   end
 
   #Association
