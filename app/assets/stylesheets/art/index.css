@@ -26,6 +26,7 @@
 .art-lists {
   margin: 50px 10px;
   display: flex;
+  overflow: scroll;
 }
 
 .list {
