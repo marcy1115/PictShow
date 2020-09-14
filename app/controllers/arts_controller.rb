@@ -19,6 +19,7 @@ class ArtsController < ApplicationController
 
   def show
     @art = Art.find(params[:id])
+    @comments = Comment.order('comment DESC')
   end
 
   private

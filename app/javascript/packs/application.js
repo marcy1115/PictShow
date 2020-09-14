@@ -7,6 +7,7 @@ require("@rails/ujs").start()
 require("@rails/activestorage").start()
 require("channels")
 require("../arts/my_list")
+require("../arts/comment")
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
