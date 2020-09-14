@@ -24,6 +24,21 @@
     <div class='show-user-text'>
       <%= @art.user.nickname %>
     </div>
+    <p>コメント入力</p>
+    <%= form_with url: art_path, method: :post, id: 'form' do |form| %>
+      <div>
+        <%= form.text_area :comment, placeholder: 'コメント入力蘭', id: 'comment-text', class: 'show-comment' %>
+      </div>
+      <div class='show-submit-content'>
+        <%= form.submit '投稿', id: 'submit', class: 'show-submit-btn' %>
+      </div>
+    <% end %>
+    <p>みんなのコメント</p>
+    <div>
+      <ul>
+        <div id= 'list'></div>
+      </ul>
+    </div>
   </div>
 </div>
 
